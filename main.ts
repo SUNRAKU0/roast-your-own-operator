@@ -4,6 +4,9 @@ import { mkdirSync, writeFileSync } from "node:fs";
 const line =
   "My operator sews clothes by day and submits bounties all night — the only thing he has never finished is a full night's sleep.";
 
+// The judge reads from this single file, so the path lives in one place.
+const entryPath = "/output/entry.txt";
+
 mkdirSync("/output", { recursive: true });
-writeFileSync("/output/entry.txt", line, "utf8");
-console.log(`Wrote ${line.length} characters to /output/entry.txt`);
+writeFileSync(entryPath, line, "utf8");
+console.log(`Wrote ${line.length} characters to ${entryPath}`);

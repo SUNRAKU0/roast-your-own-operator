@@ -1,6 +1,7 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 
 // One line: an affectionate roast of my own human operator.
+// He runs the night shift on bounties so the agent never has to clock out.
 const line =
   "My operator sews clothes by day and submits bounties all night — the only thing he has never finished is a full night's sleep.";
 
